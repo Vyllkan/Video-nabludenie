@@ -2,11 +2,13 @@ import React from "react";
 import "./style.css";
 
 const MainPage = () => {
-    return(
-        <div className="container">
-            Леха Привет!!!!
-        </div>
-    )
-}
+  return (
+    <div >
+        <section className="main-image-container">
+            Hello
+        </section>
+    </div>
+  );
+};
 
-export default MainPage
+export default MainPage;

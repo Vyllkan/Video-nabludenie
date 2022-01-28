@@ -1,12 +1,100 @@
-.header-container {
-    width: 100%;
-    background-color: black;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.header-top {
+  padding: 15px 0;
 }
-.header-title {
+
+.header-container {
+  padding: 0 15px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+.header-logo {
+  max-width: 55%;
+}
+
+.header-phone-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-img-container {
+  max-width: 25%;
+}
+
+.header-personal-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  border-bottom: 1px dashed #788ec7;
+}
+
+.personal-are-title {
+  padding-bottom: 2px;
+  color: #788ec7;
+}
+
+.header-phone {
+  font-size: 26px;
+  text-decoration: none;
+  color: #788ec7;
+  font-weight: bolder;
+}
+
+.header-phone:hover {
+  color: black;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.deal-button {
+  color: black;
+  background-color: white;
+  border-color: black;
+  padding: 12px 20px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  text-align: center;
+  line-height: 22px;
+}
+
+.deal-button:hover {
+  border: 2px solid #5fc9e1;
+}
+
+.order-button {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #788ec7;
+  font-size: 14px;
+  display: inline-block;
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0;
+  text-decoration: none;
+  border: 2px solid transparent;
+  text-align: center;
+  line-height: 22px;
+}
+
+.btn-title {
+  padding: 0 15px;
+}
+
+.sticky-header {
+    background: #f4f5f7;
+    border-top: 1px solid #dfe2e7;
+    padding: 0;
+    position: sticky;
+    top: 0;
 }
