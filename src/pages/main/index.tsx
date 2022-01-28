@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.css";
 
 const MainPage = () => {
     return(
-        <div>
-            Try to deploy
+        <div className="container">
+            Леха Привет!!!!
         </div>
     )
 }
