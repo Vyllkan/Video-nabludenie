@@ -1,0 +1,12 @@
+.header-container {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-title {
+}
