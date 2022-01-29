@@ -20,7 +20,7 @@ const MainPage = () => {
         descriptionClass: "description-warn-animation",
         imageClass: "vigil-image-animation",
       });
-    }
+    }  
   };
 
   return (
