@@ -1,8 +1,149 @@
 .main-image-container {
-    background-image: url(../../assets/images/main-video-image.jpg);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 440px;
-    min-width: 100%;
+  background-image: url(../../assets/images/main-video-image.jpg);
+  background-color: black;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 440px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+  font-family: "Roboto, sans-serif";
+  width: 30%;
+  line-height: 40px;
+}
+
+.main-row-1 {
+  color: #fcfcfc;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.main-row-2 {
+  color: #fcfcfc;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.main-row-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  fill: #2d2d2d;
+  color: #2d2d2d;
+  background-color: #f18f01;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 10px 0 rgb(45 45 45 / 29%);
+  cursor: pointer;
+  padding: 20px 40px;
+  border-color: black;
+  margin-top: 10px;
+  transition-duration: 0.5s;
+}
+
+.main-row-3:hover {
+  transform: scale(1.1);
+}
+
+.curve-svg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.description-section {
+  margin-top: 60px;
+}
+
+.description-title {
+  font-size: 35px;
+  font-family: "Roboto, sans-serif";
+  font-weight: 600;
+  margin: 0 20%;
+}
+
+.description-warn-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-warn {
+  text-align: right;
+  margin-left: 25%;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.description-warn-animation {
+  animation-duration: 2s;
+  animation-name: moveToRight;
+}
+
+.vigil-image {
+  margin-right: 25%;
+}
+
+.vigil-image-animation {
+  animation-duration: 2s;
+  animation-name: moveToLeft;
+}
+
+@media screen and (max-width: 576px) {
+  .main-image-container {
+    justify-content: center;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .description-warn-section {
+    display: block;
+  }
+
+  .description-warn {
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+  .vigil-image {
+    margin: 10px 20px;
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
