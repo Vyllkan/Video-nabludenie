@@ -76,14 +76,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .description-warn {
-  text-align: right;
-  margin-left: 25%;
+  text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 40px;
+}
+
+.warn-image {
+    margin-left: 10%;
 }
 
 .description-warn-animation {
@@ -92,7 +96,7 @@
 }
 
 .vigil-image {
-  margin-right: 25%;
+  margin-right: 10%;
 }
 
 .vigil-image-animation {
@@ -105,6 +109,11 @@
     justify-content: center;
   }
 
+  .description-title {
+      margin: 0 10px;
+      font-size: 26px;
+  }
+
   .main-section {
     width: 100%;
     margin: 0 30px;
@@ -115,12 +124,16 @@
   }
 
   .description-warn {
-    margin: 10px 20px;
+    margin: 0 10px;
     text-align: center;
   }
 
   .vigil-image {
     margin: 10px 20px;
+  }
+
+  .warn-image {
+      margin: 0 10px;
   }
 }
 
