@@ -21,7 +21,7 @@ class Carousel extends Component {
         console.log("New Slide");
       },
     };
-    M.Carousel.init(this.Carousel, options);
+    M.Carousel.init(this.Carousel, options);   
   }
 
   renderThis = () => {
