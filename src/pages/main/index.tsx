@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
+import { Dialog, DialogContent } from "@material-ui/core";
+
 import Vigil from "../../assets/images/vigil.png";
 import Carousel from "../../components/3DSlider";
+import Warn1 from "../../assets/images/warn1.jpg";
+import Warn2 from "../../assets/images/warn2.jpg";
 
+import "./style.css";
 const MainPage = () => {
   useEffect(() => {
     window.addEventListener("scroll", checkScroll);
@@ -13,6 +17,8 @@ const MainPage = () => {
     descriptionClass: "opacity",
     imageClass: "opacity",
   });
+
+  const [openDialog, setOpenDialog] = useState(false)
 
   const checkScroll = (event: any) => {
     if (window.scrollY > 150 && animation.descriptionClass === "opacity") {
@@ -45,7 +51,11 @@ const MainPage = () => {
           Камеры без слежения показывают только уже совершенные преступления
         </div>
         <div className="description-warn-section">
-          <div className={`description-warn ${animation.descriptionClass}`}>
+          <div className={`warn-image ${animation.descriptionClass}`}>
+            <img src={Warn1} alt="" width={300} height={150} />
+            <img src={Warn2} alt="" width={300} height={150} />
+          </div>
+          <div className={`description-warn`}>
             Наша компания сочетает в себе высокотехнологичные камеры и передовое
             программное обеспечение с видеонаблюдением в реальном времени,
             осуществляемым виртуальным охранником, чтобы выявлять и
@@ -58,6 +68,9 @@ const MainPage = () => {
       </section>
 
       <Carousel />
+      {/* <Dialog open={openDialog}  >
+            <DialogContent></DialogContent>
+      </Dialog> */}
     </div>
   );
 };

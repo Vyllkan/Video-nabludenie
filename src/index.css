@@ -24,3 +24,6 @@ html, body {
   opacity: 0;
 }
 
+.MuiDialogContent-root {
+  padding: 0 !important;
+}
