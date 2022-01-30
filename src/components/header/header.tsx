@@ -3,7 +3,6 @@ import "./index.css";
 import KratosLogo from "../../assets/images/logo-kratos.png";
 import UserSvg from "../../assets/images/user.svg";
 import PhonePng from "../../assets/images/phone.png";
-import { sentEmail } from "../../helpers/email";
 import { Dialog, DialogContent, makeStyles } from "@material-ui/core";
 import OrderDialog from "../orderDialog";
 
@@ -17,6 +16,7 @@ const useStyles = makeStyles({
     padding: '0px',
     height: 'auto',
     minHeight: '550px',
+    // eslint-disable-next-line no-useless-computed-key
     ['@media (max-width:576px)']: {
       innerHeight: '100%',
       height: '100%',
