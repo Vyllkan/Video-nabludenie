@@ -11,10 +11,10 @@ const OrderDialog = () => {
         description: ""
     })
 
-    const [error, setError] = useState({
-        nameError: false,
-        phoneError: false
-    })
+    // const [error, setError] = useState({
+    //     nameError: false,
+    //     phoneError: false
+    // })
 
     const sentData = () => {
         if (!state.name || !state.phone) {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Dialog, DialogContent } from "@material-ui/core";
 
 import Vigil from "../../assets/images/vigil.png";
 import Carousel from "../../components/3DSlider";
@@ -18,7 +17,6 @@ const MainPage = () => {
     imageClass: "opacity",
   });
 
-  const [openDialog, setOpenDialog] = useState(false)
 
   const checkScroll = (event: any) => {
     if (window.scrollY > 150 && animation.descriptionClass === "opacity") {
