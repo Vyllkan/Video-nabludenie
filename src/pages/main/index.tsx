@@ -6,6 +6,7 @@ import Carousel from "../../components/3DSlider";
 const MainPage = () => {
   useEffect(() => {
     window.addEventListener("scroll", checkScroll);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [animation, setAnimation] = useState({
