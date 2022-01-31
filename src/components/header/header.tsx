@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import "./index.css";
 import KratosLogo from "../../assets/images/label.png";
 import PhonePng from "../../assets/images/phone.png";
