@@ -22,8 +22,11 @@
 }
 
 .header-img-container {
-  width: 100%;
+  max-width: 312px;
+  min-width: 310px;
+  display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .header-img-title {
@@ -33,7 +36,6 @@
   color: #6e6a6a;
   font-family: cursive;
 }
-
 
 .header-personal-area {
   margin-right: 30px;
@@ -86,8 +88,6 @@
   border: 2px solid #5fc9e1;
 }
 
-
-
 .deal-button:focus {
   background-color: inherit;
 }
@@ -122,31 +122,37 @@
 }
 
 .sticky-header {
-    background: #f4f5f7;
-    border-top: 1px solid #dfe2e7;
-    padding: 0;
-    position: sticky;
-    top: 0;
+  background: #f4f5f7;
+  border-top: 1px solid #dfe2e7;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header-img-container {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .header-container {
-        display: block;
-    }
-    .header-img-container {
-        max-width: unset;
-    }
-    
-    .header-phone-section {
-        margin: 10px 0;
-    }
+  .header-container {
+    display: block;
+  }
 
-    .deal-button, .order-button {
-        border-radius: 10px;
-        padding: 12px 25px;
-    }
+  .header-phone-section {
+    margin: 10px 0;
+  }
 
-    .header-phone {
-        font-size: 20px;
-    }
+  .deal-button,
+  .order-button {
+    border-radius: 10px;
+    padding: 12px 25px;
+  }
+
+  .header-phone {
+    font-size: 20px;
+  }
 }
