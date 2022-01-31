@@ -6,17 +6,17 @@ import Warn1 from "../../assets/images/warn1.jpg";
 import Warn2 from "../../assets/images/warn2.jpg";
 
 import "./style.css";
+import PriceTable from "../../components/priceList";
 const MainPage = () => {
   useEffect(() => {
     window.addEventListener("scroll", checkScroll);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [animation, setAnimation] = useState({
     descriptionClass: "opacity",
     imageClass: "opacity",
   });
-
 
   const checkScroll = (event: any) => {
     if (window.scrollY > 150 && animation.descriptionClass === "opacity") {
@@ -25,7 +25,7 @@ const MainPage = () => {
         descriptionClass: "description-warn-animation",
         imageClass: "vigil-image-animation",
       });
-    }  
+    }
   };
 
   return (
@@ -37,9 +37,11 @@ const MainPage = () => {
             <div className="main-row-2">
               Услуг удаленного наблюдения в реальном времени
             </div>
-            <button className="main-row-3">
-              Борьба с преступностью сейчас
-            </button>
+            <a href="#priceTable" rel="noopener noreferrer">
+              <button className="main-row-3">
+                Борьба с преступностью сейчас
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -66,9 +68,9 @@ const MainPage = () => {
       </section>
 
       <Carousel />
-      {/* <Dialog open={openDialog}  >
-            <DialogContent></DialogContent>
-      </Dialog> */}
+      <div id="priceTable">
+        <PriceTable />
+      </div>
     </div>
   );
 };

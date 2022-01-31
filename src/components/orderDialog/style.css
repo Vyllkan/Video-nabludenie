@@ -1,7 +1,3 @@
-.order-container {
-    /* padding: 20px; */
-}
-
 .order-title-container {
     display: flex;
     align-items: center;
@@ -60,7 +56,13 @@
 }
 
 .order-btn {
-    background-color: blue;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #788ec7;
+    border-color: thistle;
+    border: 1px solid #ced4da !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .error {

@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./index.css";
 import KratosLogo from "../../assets/images/label.png";
 import PhonePng from "../../assets/images/phone.png";
 import { Dialog, DialogContent, makeStyles } from "@material-ui/core";
 import OrderDialog from "../orderDialog";
+import { useHideOnScroll } from "./hook";
 
 const useStyles = makeStyles({
   root: {
@@ -41,17 +42,19 @@ const Header: React.FC = () => {
   const openSentEmail = () => {
     setOpenDialog(true)
   }
-
+  const shouldHide = useHideOnScroll();
+  
   const closeSentEmail = () => {
     setOpenDialog(false)
   }
   return (
-    <header>
+    <header className={`hide-container ${shouldHide? 'dNone': ''}`}>
       <div className="header-top">
         <div className="container">
           <div className="header-container">
             <div className="header-img-container">
-              <img src={KratosLogo} alt="icon" className="header-logo" />
+              <img src={KratosLogo} alt="icon" className="header-logo" height={120} width={115} />
+              <div className="header-img-title">Вулкан</div>
             </div>
             <div className="header-phone-section">
               <div className="phone-area">
@@ -59,9 +62,9 @@ const Header: React.FC = () => {
                   className="fa-user"
                   src={PhonePng}
                   alt="phone"
-                  height={26}
+                  height={22}
                 />
-                <a href="tel:+380686543663" className="header-phone">(096)6543667</a>
+                <a href="tel:+380971867569" className="header-phone">(097)1867569</a>
               </div>
             </div>
             <div className="btn-group">

@@ -22,10 +22,21 @@
 }
 
 .header-img-container {
-  max-width: 25%;
+  width: 100%;
+  position: relative;
 }
 
+.header-img-title {
+  position: absolute;
+  top: 0;
+  left: 43%;
+  color: #6e6a6a;
+  font-family: cursive;
+}
+
+
 .header-personal-area {
+  margin-right: 30px;
   display: flex;
   align-items: flex-end;
   gap: 4px;
@@ -42,6 +53,10 @@
   text-decoration: none;
   color: #788ec7;
   font-weight: bolder;
+}
+
+.phone-area {
+  margin-right: 20px;
 }
 
 .header-phone:hover {
