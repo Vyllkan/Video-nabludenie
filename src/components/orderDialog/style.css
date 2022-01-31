@@ -28,6 +28,7 @@
 
 .form-group {
     margin: 2rem 4rem 1rem 4rem;
+    position: relative;
 }
 
 .form-field {
@@ -60,5 +61,10 @@
 
 .order-btn {
     background-color: blue;
-    
+}
+
+.error {
+    position: absolute;
+    color: red;
+    font-size: 10px;
 }

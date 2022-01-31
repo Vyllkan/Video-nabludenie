@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "./index.css";
-import KratosLogo from "../../assets/images/logo-kratos.png";
-import UserSvg from "../../assets/images/user.svg";
+import KratosLogo from "../../assets/images/label.png";
 import PhonePng from "../../assets/images/phone.png";
 import { Dialog, DialogContent, makeStyles } from "@material-ui/core";
 import OrderDialog from "../orderDialog";
@@ -55,10 +54,6 @@ const Header: React.FC = () => {
               <img src={KratosLogo} alt="icon" className="header-logo" />
             </div>
             <div className="header-phone-section">
-              <div className="header-personal-area">
-                <img className="fa-user" src={UserSvg} alt="user" />
-                <div className="personal-are-title">Личный кабинет</div>
-              </div>
               <div className="phone-area">
                 <img
                   className="fa-user"
@@ -86,7 +81,7 @@ const Header: React.FC = () => {
         onClose={closeSentEmail}
         >
         <DialogContent>
-          <OrderDialog />
+          <OrderDialog closeWindow={closeSentEmail}/>
         </DialogContent>
       </Dialog>
       </div>
