@@ -23,6 +23,5 @@ export const useHideOnScroll = () => {
         window.removeEventListener("scroll", onScroll);
       };
     }, [isHidden]);
-    console.log(isHidden)
     return isHidden;
   };

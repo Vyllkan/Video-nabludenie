@@ -14,7 +14,6 @@ const useStyles = makeStyles({
   },
   container: {
     padding: '0px',
-    height: 'auto',
     minHeight: '550px',
     // eslint-disable-next-line no-useless-computed-key
     ['@media (max-width:576px)']: {

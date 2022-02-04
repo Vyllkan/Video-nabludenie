@@ -1,0 +1,1 @@
+export type switchType = "initial" | "installation" | "documentation";
