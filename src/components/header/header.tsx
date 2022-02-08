@@ -97,7 +97,7 @@ const Header: React.FC = () => {
               <button className="deal-button pointer" onClick={openPhone}>
                 <div className="btn-title" >Заказать</div> <div>Звонок</div>
               </button>
-              <button className="order-button pointer" onClick={openSentEmail}>
+              <button className="order-button pointer" onClick={openSentEmail}> 
                 <div className="btn-title">Оставить</div> <div>Заявку</div>{" "}
               </button>
             </div>
