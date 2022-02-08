@@ -4,9 +4,10 @@ import Vigil from "../../assets/images/vigil.png";
 import Carousel from "../../components/3DSlider";
 import Warn1 from "../../assets/images/warn1.jpg";
 import Warn2 from "../../assets/images/warn2.jpg";
+import Desc from "../../assets/images/desc.png";
+import PriceTable from "../../components/priceList";
 
 import "./style.css";
-import PriceTable from "../../components/priceList";
 const MainPage = () => {
   useEffect(() => {
     window.addEventListener("scroll", checkScroll);
@@ -30,21 +31,28 @@ const MainPage = () => {
 
   return (
     <div>
+      <div className="main-image-wrapper">
       <section className="main-image-container">
         <div className="main-section">
           <div>
-            <div className="main-row-1">Защитите свои активы с помощью</div>
-            <div className="main-row-2">
-              Услуг удаленного наблюдения в реальном времени
-            </div>
             <a href="#priceTable" rel="noopener noreferrer">
               <button className="main-row-3">
-                Борьба с преступностью сейчас
+               Стоимость услуг
               </button>
             </a>
           </div>
         </div>
       </section>
+      <div className="main-section-mobile">
+          <div>
+            <a href="#priceTable" rel="noopener noreferrer">
+              <button className="main-row-3">
+               Стоимость услуг
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <section className="description-section">
         <div className="description-title">
@@ -67,7 +75,11 @@ const MainPage = () => {
         </div>
       </section>
 
+
       <Carousel />
+      <div>
+            <img src={Desc} alt="" className="price-image"/>
+          </div>
       <div id="priceTable">
         <PriceTable />
       </div>

@@ -32,7 +32,14 @@ const PriceTable: FC = () => {
                   Первоначальный выезд на объект (г. Харьков)
                 </th>
                 <th className="th-head th-body">—</th>
-                <th className=" th-head th-body">400</th>
+                <th className=" th-head th-body">150</th>
+              </tr>
+              <tr>
+                <th className="th-body">
+                  Первоначальный выезд на объект (Харьковская область)
+                </th>
+                <th className="th-head th-body">—</th>
+                <th className=" th-head th-body">200*</th>
               </tr>
             </tbody>
           </table>
@@ -51,14 +58,6 @@ const PriceTable: FC = () => {
                 <th className="th-body">Установка и настройка видеокамеры</th>
                 <th className="th-head th-body">шт</th>
                 <th className=" th-head th-body">500 *</th>
-              </tr>
-              <tr>
-                <th className="th-body">
-                  Установка и настройка видеокамеры Speed Dome
-                  (роботизированная, поворотная камера)
-                </th>
-                <th className="th-head th-body">шт</th>
-                <th className=" th-head th-body">2300 *</th>
               </tr>
               <tr>
                 <th className="th-body">
@@ -109,7 +108,7 @@ const PriceTable: FC = () => {
               <tr>
                 <th className="th-body">Проектная документация</th>
                 <th className="th-head th-body">—</th>
-                <th className=" th-head th-body">400</th>
+                <th className=" th-head th-body">2000</th>
               </tr>
             </tbody>
           </table>
@@ -133,9 +132,9 @@ const PriceTable: FC = () => {
           *Цена может варьироваться в зависимости от сложности работ и типа
           оборудования.
         </p>
-        <p className="additional-text">
+        {/* <p className="additional-text">
           ** Стоимость будет учтена только в случае заключения договора
-        </p>
+        </p> */}
       </section>
     </div>
   );

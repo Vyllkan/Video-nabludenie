@@ -1,5 +1,5 @@
 .main-image-container {
-  background-image: url(../../assets/images/main-video-image.jpg);
+  background-image: url(../../assets/images/ustanovka_video.jpg);
   background-color: black;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -7,9 +7,19 @@
   min-height: 440px;
   min-width: 100%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-end;
   position: relative;
+}
+
+.main-image-wrapper {
+  position: relative;
+}
+
+@media screen and (min-width: 759px) {
+  .main-section-mobile {
+    display: none;
+  }
 }
 
 .main-section {
@@ -25,10 +35,11 @@
   color: #fcfcfc;
   font-size: 30px;
   font-weight: 300;
+  filter: unset;
 }
 
 .main-row-2 {
-  color: #fcfcfc;
+  color: #2d2d2d;
   font-size: 30px;
   font-weight: bold;
   line-height: 30px;
@@ -46,12 +57,14 @@
   cursor: pointer;
   padding: 20px 40px;
   border-color: black;
-  margin-top: 10px;
+  margin-top: 30px;
   transition-duration: 0.5s;
 }
 
 .main-row-3:hover {
   transform: scale(1.1);
+  background-color: #2d2d2d;
+  color: #f18f01;
 }
 
 .curve-svg {
@@ -87,7 +100,7 @@
 }
 
 .warn-image {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .description-warn-animation {
@@ -104,14 +117,35 @@
   animation-name: moveToLeft;
 }
 
+@media screen and (max-width: 880px) {
+  .description-warn-section {
+    display: block;
+  }
+  .vigil-image {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main-section {
+    display: none !important;
+  }
+  .main-image-container {
+    min-height: unset;
+    justify-content: center;
+  }
+  .main-row-3 {
+  }
+}
+
 @media screen and (max-width: 576px) {
   .main-image-container {
     justify-content: center;
   }
 
   .description-title {
-      margin: 0 10px;
-      font-size: 26px;
+    margin: 0 10px;
+    font-size: 26px;
   }
 
   .main-section {
@@ -119,21 +153,23 @@
     margin: 0 30px;
   }
 
-  .description-warn-section {
-    display: block;
-  }
-
   .description-warn {
     margin: 0 10px;
     text-align: center;
   }
 
-  .vigil-image {
-    margin: 10px 20px;
-  }
-
   .warn-image {
-      margin: 0 10px;
+    margin: 0 10px;
+  }
+}
+
+.price-image {
+  width: 55%;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    justify-content: flex-end;
   }
 }
 

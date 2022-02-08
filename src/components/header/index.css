@@ -129,11 +129,22 @@
   top: 0;
 }
 
+.mobile-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 580px) {
+  .mobile-img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header-img-container {
     width: 100%;
     min-width: unset;
     max-width: unset;
+    display: none;
   }
 }
 
@@ -155,4 +166,9 @@
   .header-phone {
     font-size: 20px;
   }
+}
+
+.header-mobile-container {
+  display: flex;
+  align-items: center;
 }
