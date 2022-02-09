@@ -14,14 +14,12 @@ const PhoneDialog: FC<Props> = ({ closeWindow }) => {
   });
 
   const [error, setError] = useState({
-    nameError: false,
     phoneError: false,
   });
 
   const sentData = () => {
-    debugger;
-    if (!state.name || !state.phone) {
-      setError({ nameError: !!!state.name, phoneError: !!!state.phone });
+    if (!state.phone) {
+      setError({phoneError: !!!state.phone });
       return;
     }
     sentEmail(state.name, state.phone, state.description);

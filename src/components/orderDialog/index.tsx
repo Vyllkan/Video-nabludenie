@@ -19,7 +19,6 @@ const OrderDialog: FC<Props> = ({ closeWindow }) => {
   });
 
   const sentData = () => {
-    debugger;
     if (!state.name || !state.phone) {
       setError({ nameError: !!!state.name, phoneError: !!!state.phone });
       return;

@@ -52,7 +52,6 @@ const Header: React.FC = () => {
   };
 
   const openPhone = () => {
-    debugger
     setOpenDialog({...openDialog, phone: true})
   }
 

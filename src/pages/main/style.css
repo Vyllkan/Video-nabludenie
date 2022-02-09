@@ -134,8 +134,6 @@
     min-height: unset;
     justify-content: center;
   }
-  .main-row-3 {
-  }
 }
 
 @media screen and (max-width: 576px) {
